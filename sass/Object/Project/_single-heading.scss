@@ -1,0 +1,54 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.p-single-heading {
+
+  &__h3 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "M+ 1m";
+    color: v.$brownColor;
+    margin-bottom: 31px;
+
+    @include m.tb {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__h4 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "M+ 1m";
+    color: v.$brownColor;
+    margin-bottom: 37px;
+
+    @include m.tb {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__h5 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "M+ 1m";
+    color: v.$brownColor;
+    margin-bottom: 30px;
+
+    @include m.tb {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__h6 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "M+ 1m";
+    color: v.$brownColor;
+    margin-bottom: 30px;
+
+    @include m.tb {
+      margin-bottom: 60px;
+    }
+  }
+
+}

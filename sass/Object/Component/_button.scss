@@ -1,0 +1,16 @@
+@use "../../Foundation/variable" as v;
+
+.c-button {
+  // 丸み
+  border-radius: 10px;
+  // 背景
+  background-color: v.$aside-bg-color;
+  // 文字色
+  color: v.$mainColor;
+  // 枠線
+  border: solid 1px;
+  // 枠線の色
+  border-color: v.$brownColor;
+  // ボタンの高さ
+  height: 46px;
+}

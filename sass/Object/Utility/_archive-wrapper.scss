@@ -1,0 +1,9 @@
+@use "../../Foundation/mixin" as m;
+
+.p-archive-wrapper {
+  padding: 30px 20px 70px 20px;
+
+  @include m.pc {
+    padding: 36px 36px 105.5px 36px;
+  }
+}

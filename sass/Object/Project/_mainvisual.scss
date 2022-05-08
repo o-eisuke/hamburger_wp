@@ -1,0 +1,43 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.p-mainvisual {
+  // 画像を配置
+  height: 285px;
+  width: auto;
+  min-width: 375px;
+  background: url(../images/sp_mainvisual.png);
+  background-size: cover;
+  background-position: center;
+
+  // フォントを中央縦揃え（親要素）
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__title {
+    // フォント
+  color: v.$whiteFont;
+  font-size: 36px;
+  font-weight: bold;
+
+  // フォントを中央縦揃え（子要素）
+  position: absolute;
+  left: 25px;
+  }
+
+  @include m.tb {
+    background: url(../images/tb_mainvisual.png) center center no-repeat;
+    background-size: cover;
+    min-width: 600px;
+  }
+
+  @include m.pc {
+    background: url(../images/mainVisual.png) center center no-repeat;
+    background-size: cover;
+    height: 400px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
+

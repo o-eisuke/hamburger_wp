@@ -1,0 +1,22 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.p-preformatted {
+  background-color: #F5F5F5;
+  min-width: 336px;
+  min-height: 236px;
+  padding: 50px;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 30px;
+
+  @include m.tb {
+    margin-bottom: 60px;
+  }
+
+  &__code {
+    font-size: 16px;
+    font-family: "M+ 1m";
+    color: v.$brownColor;
+  }
+}

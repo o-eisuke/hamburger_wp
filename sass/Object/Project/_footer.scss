@@ -1,0 +1,44 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.p-footer {
+  background: url(../images/sp_footer.png);
+  background-size: cover;
+  min-width: 375px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include m.tb {
+    background: url(../images/tb_footer.png);
+    background-size: cover;
+  }
+
+  @include m.pc {
+    background: url(../images/pc_footerf.png);
+    background-size: cover;
+  }
+
+  &__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    &--partition {
+      margin: 18px;
+    }
+  }
+
+  &__ul a {
+    text-decoration: none;
+    color: white;
+  }  
+
+  &__copyright {
+    color: v.$whiteFont;
+    font-size: 14px;
+    margin-top: 34px;
+  }
+}

@@ -1,0 +1,44 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.p-table {
+  border: solid 1px v.$mainColor;
+  border-collapse: collapse;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: "M+ 1m";
+  width: 100%;
+  margin-bottom: 30px;
+
+  & tr {
+    border: solid 1px v.$mainColor;
+    border-collapse: collapse;
+  }
+
+  & td {
+    border: solid 1px v.$mainColor;
+    border-collapse: collapse;
+  }
+
+  &__td {
+    height: 77px;
+
+    &--first {
+      width: 40%;
+      padding: 28px 0px 28px 30px;
+
+      @include m.tb {
+        width: 30%;
+      }
+    }
+
+    &--second {
+      width: 60%;
+      padding: 28px 0px 28px 30px;
+
+      @include m.tb {
+        width: 70%;
+      }
+    }
+  }
+}

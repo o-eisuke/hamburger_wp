@@ -1,0 +1,21 @@
+@use "../../Foundation/mixin" as m;
+
+.c-second-burger-img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  height: 166px;
+  width: 267px;
+
+  @include m.tb {
+    height: 358px;
+    width: 581px;
+    margin-bottom: 241px;
+  }
+
+  @include m.pc {
+    height: 358px;
+    width: 581px;
+    margin-bottom: 60px;
+  }
+}

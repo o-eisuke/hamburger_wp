@@ -1,0 +1,6 @@
+@use "../../Foundation/variable" as v;
+
+.c-menu-list {
+  color: v.$mainColor;
+  margin-bottom: 23px;
+}

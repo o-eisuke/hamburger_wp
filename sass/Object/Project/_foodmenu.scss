@@ -1,0 +1,106 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.p-foodmenu {
+  list-style: none;
+
+  @include m.tb {
+    display: flex; /*「Take Out」と「Eat In」の箱を、タブレット以上は横並び*/
+  }
+
+  &__list1 {
+
+    background: url(../images/takeOut.png);
+    background-size: cover;
+    min-width: 335px;
+    min-height: 642px;
+    margin: 20px 20px 0 20px;
+    //下の子要素（h2とdivに対して縦並び）
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include m.tb {
+      min-width: 239.5px;
+      min-height: 681px;
+      margin: 40px 41px 40px 40px;
+    }
+
+    @include m.pc {
+      min-width: 361.5px;
+      margin: 120px 80px 134px 111px;
+    }
+
+  }
+
+  &__list2 {
+
+    background: url(../images/eatIn.png);
+    background-size: cover;
+    min-width: 335px;
+    min-height: 642px;
+    margin: 20px 20px 49px 20px;
+    //下の子要素（h2とdivに対して縦並び）
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include m.tb {
+      min-width: 239.5px;
+      min-height: 681px;
+      margin: 40px 40px 40px 0;
+    }
+
+    @include m.pc {
+      min-width: 361.5px;
+      margin: 120px 112px 134px 0;
+    }
+
+  }
+
+  &__title {
+    color: v.$whiteFont;
+    font-family: Roboto;
+    font-size: 41px;
+    margin-top: 11px;
+    margin-left: 10px;
+    position: relative;  /*疑似要素作成のため*/
+
+    //疑似要素で下線を作成
+    &::after {
+      content:"";
+      display:block;
+      width: 33.89px;
+      height: 4px;
+      background-color: v.$whiteFont;
+      position: absolute;
+      bottom: -27px;
+    }
+  }
+
+  &__dl {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    min-height: 162px;
+    margin: 0 10px 10px 10px;
+  }
+
+  &__dt {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "M+ 1m";
+    color: v.$brownColor;
+    padding-top: 19px;
+    margin-bottom: 19px;
+    margin-left: 10px;
+
+  }
+
+  &__dd {
+    font-size: 16px;
+    color: v.$brownColor;
+    margin: 0 14px 23px 10px;
+    padding-bottom: 20px;
+  }
+
+}

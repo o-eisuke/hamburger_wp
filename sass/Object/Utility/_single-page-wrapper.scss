@@ -1,0 +1,12 @@
+@use "../../Foundation/mixin" as m;
+
+.p-single-page-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include m.tb {
+    // padding-left: 60px;
+    // padding-right: 60px;
+    padding: 0 60px 0 60px;
+  }
+}

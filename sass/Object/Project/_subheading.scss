@@ -1,0 +1,15 @@
+@use "../../Foundation/variable" as v;
+
+.p-subheading {
+  width: 100%;
+
+  &__title {
+    margin-bottom: 30px;
+    color: v.$brownColor;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    color: v.$brownColor;
+  }
+}

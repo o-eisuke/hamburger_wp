@@ -1,0 +1,17 @@
+@use "../Foundation/mixin" as m;
+@use "../Foundation/variable" as v;
+
+.l-header {
+  height: 217px;
+  min-width: 375px;
+  background-color: v.$header-bg-color;
+
+  @include m.tb {
+    min-width: 600px;
+  }
+
+  @include m.pc {
+    // タイトルとフォームの配置を左右に配置（親要素）
+    position: relative;
+  }
+}

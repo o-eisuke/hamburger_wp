@@ -1,0 +1,29 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.p-description {
+  margin-top: 30px;
+  margin-bottom: 34px;
+
+  &__heading {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "M+ 1m";
+    color: v.$brownColor;
+    margin-bottom: 30px;
+
+    @include m.tb {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-family: "M+ 1m";
+    color: v.$brownColor;
+
+    @include m.tb {
+      margin-bottom: 60px;
+    }
+  }
+}

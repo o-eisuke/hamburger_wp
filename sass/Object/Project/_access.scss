@@ -1,0 +1,102 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.p-access {
+  min-height: 691px;
+  min-width: 375px;
+  background: url(../images/sp_Map.png);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: relative;
+
+  @include m.tb {
+    min-height: 415px;
+    min-width: 600px;
+    background: url(../images/tb_Map.png);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  @include m.pc {
+    min-height: 649px;
+    min-width: 1025px;
+    background: url(../images/pc_Map.png);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  &__film {
+    z-index: 1;
+    content: “”;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60%;
+    background-color: rgba(0,0,0, 0.4);
+
+    @include m.tb {
+      height: 100%;
+    }
+    @include m.pc {
+      height: 100%;
+      width: 60%;
+    }
+  }
+
+  &__article-Wrapper {
+    width: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 2rem;
+    
+    @include m.pc {
+      width: 60%;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "M+ 1m";
+    color: v.$whiteFont;
+    position: relative;
+    z-index: 3;
+
+    &::after {
+      content:"";
+      display:block;
+      width: 75px;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      bottom: -20px;
+
+      @include m.pc {
+        // margin: 55.5px 0 63.5px 0;
+        bottom: -55.5px;
+      }
+    }
+    
+  }
+
+  &__text {
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "M+ 1m";
+    color: v.$whiteFont;
+    position: relative; /*テキストを浮かすため*/
+    z-index: 3;
+
+    @include m.pc {
+      margin-top: 119px;
+    }
+  }
+
+  
+}

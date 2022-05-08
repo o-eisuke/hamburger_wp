@@ -1,0 +1,62 @@
+@use "../../Foundation/mixin" as m;
+
+.p-form {
+
+  // インプットタグの虫眼鏡の配置
+  display: inline-block; /* なくても大丈夫だけど、念の為 */
+  position: relative;    /* 基準値とする */
+  &::before {
+    content: "";           /* 疑似要素に必須 */
+    width: 24px;           /* アイコンの横幅 */
+    height: 24px;          /* アイコンの高さ */
+    background: url(../../../images/sp-seaech-icon.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
+    display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
+    position: absolute;    /* 相対位置に指定 */
+    // top: 9px;              /* アイコンの位置。微調整してね */
+    left: 16px;             /* アイコンの位置。微調整してね */
+    // vertical-align: middle;
+    transform: translateY(-50%);
+    top: 50%;
+  }
+
+  // フォームのインプットタグ
+  &__input {
+    // 高さと幅
+    width: 230px;
+    height: 46px;
+    // 虫眼鏡のための左の余白
+    padding: 3px 0 3px 3em; /* アイコンを設置するため左の余白を多めに指定*/
+    // 右の余白
+    margin-right: 13px;
+
+    @include m.tb {
+      // インプットタグの幅
+      width: 396px;
+      // 右に余白
+      margin-right: 13px;
+    }
+  }
+
+  // フォームのボタンタグ
+  &__button {
+    // 高さと幅
+    width: 78px;
+    height: 46px;
+    // フォント
+    font-size: 16px;
+    font-weight: bold;
+
+    @include m.tb {
+      // ボタンタグの幅
+      width: 136px;
+    }
+  }
+
+  // PC版のフォームの位置
+  @include m.subpc {
+    position: absolute;
+    top: 86px;
+    right: 31px;
+  }
+
+}

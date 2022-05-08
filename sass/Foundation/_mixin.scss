@@ -1,0 +1,32 @@
+// 【★ブレークポイント★】
+
+// $sp:375px;
+$tb:600px;
+$subtb:750px;
+$pc:1025px;
+$subpc:1250px;
+
+
+@mixin tb {
+  @media screen and (min-width: ($tb)) {
+    @content;
+  }
+}
+
+@mixin subtb {
+  @media screen and (min-width: ($subtb)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media screen and (min-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin subpc {
+  @media screen and (min-width: ($subpc)) {
+    @content;
+  }
+}

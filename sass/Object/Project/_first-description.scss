@@ -1,0 +1,36 @@
+@use "../../Foundation/mixin" as m;
+
+.p-first-description {
+  display: flex;
+  margin-bottom: 30px;
+
+  @include m.tb {
+    margin-bottom: 60px;
+  }
+
+  @include m.pc {
+    margin-bottom: 60px;
+  }
+
+  &__img {
+    height: 89px;
+    width: 144px;
+    margin-right: 10px;
+    object-fit: cover;
+
+    @include m.tb {
+      height: 189px;
+      width: 306px;
+    }
+
+    @include m.pc {
+      height: 358px;
+      width: 581px;
+    }
+  }
+
+  &__text {
+    min-height: 89px;
+    min-width: 144px;
+  }
+}

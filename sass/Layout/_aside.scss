@@ -1,0 +1,12 @@
+@use "../Foundation/mixin" as m;
+@use "../Foundation/variable" as v;
+
+.l-aside {
+  background-color: v.$aside-bg-color;
+
+  @include m.pc {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  
+}

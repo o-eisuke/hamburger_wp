@@ -1,0 +1,85 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.p-aside {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 1000;
+  width: 85%;
+
+  @include m.tb {
+    width: 44%;
+  }
+
+  @include m.pc {
+    width: auto;
+    position: static;
+    right: 0;
+  }
+
+  &.open {
+    position: fixed;
+    right: 0%;
+    transition: 0.4s;
+    height: 100%;
+    overflow: scroll;
+  }
+
+  &__button {  /*「Menu」ボタン押下したときの、「☓」ボタンの位置*/
+    position: absolute;
+    top: 25px;
+    right: 17px;
+    cursor: pointer;
+    border: none;
+    
+    @include m.pc {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: none;
+    color: v.$mainColor;
+    
+    @include m.pc {
+      display: block;
+      margin-top: 82px;
+      margin-bottom: 85px;
+      margin-left: 46px;
+    }
+  }
+
+  &__title1 {
+    font-weight: bold;
+    color: v.$mainColor;
+    margin-top: 212px;
+    margin-bottom: 40px;
+    margin-left: 46px;
+
+    @include m.pc {
+      margin-top: initial;
+    }
+  }
+
+  &__title2 {
+    font-weight: bold;
+    color: v.$mainColor;
+    margin-top: 20px;
+    margin-bottom: 39px;
+    margin-left: 46px;
+  }
+
+  &__title3 {
+    font-weight: bold;
+    color: v.$mainColor;
+    margin-top: 20px;
+    margin-bottom: 38px;
+    margin-left: 46px;
+  }
+
+}
+
+body.open {
+  overflow: hidden
+}

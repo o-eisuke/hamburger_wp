@@ -1,0 +1,11 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.c-bold-text {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+  color: v.$brownColor;
+  // display: block;
+  margin-bottom: 177px;
+}

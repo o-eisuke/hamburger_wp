@@ -1,0 +1,57 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.p-header {
+  // ヘッダーを縦並び
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  // ボタンの配置
+  position: relative;
+
+  &__title {
+    // フォント
+    color: v.$mainColor;
+    font-size: 40px;
+    font-family: Roboto;
+    // 下の余白
+    margin-bottom: 38px;
+
+    @include m.subpc {
+      // タイトルの配置
+      position: absolute;
+      top: 56px;
+      left: 65px;
+      // フォントのサイズ
+      font-size: 64px;
+    }
+  }
+
+  &__menu {
+    // 位置を調整
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    // ボタンのデザイン変更
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: Roboto;
+    color: v.$mainColor;
+    cursor: pointer;
+
+    &.active {
+      display: none;
+    }
+
+    @include m.pc {
+      display: none;
+    }
+
+    @include m.subpc {
+      display: none;
+    }
+  }
+}

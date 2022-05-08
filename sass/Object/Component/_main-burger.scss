@@ -1,0 +1,17 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.c-main-burger {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  object-fit: cover;
+
+  @include m.tb {
+    margin-bottom: 60px;
+  }
+
+  @include m.pc {
+    margin-bottom: 60px;
+  }
+}
