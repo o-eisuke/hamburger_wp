@@ -22,10 +22,7 @@
 
       <header class="l-header p-header">
         <h1 class="p-header__title c-title">Hamburger</h1>
-        <form class="p-form">
-          <input class="p-form__input c-input" type="text">
-          <button class="p-form__button c-button">検索</button>
-        </form>
+        <?php get_search_form(); ?>
         <button class="p-header__menu">
           Menu
         </button>
