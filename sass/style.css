@@ -739,7 +739,7 @@ body.open {
   /* アイコンの横幅 */
   height: 24px;
   /* アイコンの高さ */
-  background: url(../../../images/sp-seaech-icon.png) no-repeat center center/auto 100%;
+  background: url(../images/sp-seaech-icon.png) no-repeat center center/auto 100%;
   /* 背景にアイコン画像を配置 */
   display: inline-block;
   /* 高さを持たせるためにインラインブロック要素にする */

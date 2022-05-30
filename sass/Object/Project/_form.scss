@@ -9,7 +9,7 @@
     content: "";           /* 疑似要素に必須 */
     width: 24px;           /* アイコンの横幅 */
     height: 24px;          /* アイコンの高さ */
-    background: url(../../../images/sp-seaech-icon.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
+    background: url(../images/sp-seaech-icon.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
     display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
     position: absolute;    /* 相対位置に指定 */
     // top: 9px;              /* アイコンの位置。微調整してね */
