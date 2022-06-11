@@ -1,9 +1,10 @@
 <footer class="l-footer p-footer">
-  <ul class="p-footer__ul">
+  <?php wp_nav_menu( array('menu' => 'footermenu') ); ?> 
+  <!-- <ul class="p-footer__ul">
     <li class="c-link"><a href="#">ショップ情報</a></li>
     <span class="p-footer__ul--partition c-partition"></span>
     <li class="c-link"><a href="#">ヒストリー</a></li>
-  </ul>
+  </ul> -->
   <address class="p-footer__copyright c-text">Copyright: RaiseTech</address>
 </footer>
 

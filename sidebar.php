@@ -4,7 +4,8 @@
     <span class="c-close__left"></span>
   </button>
   <h3 class="p-aside__menu c-title">Menu</h3>
-  <h3 class="p-aside__title1 c-title">バーガー</h3>
+  <?php wp_nav_menu( array('menu' => 'categorymenu') ); ?> 
+  <!-- <h3 class="p-aside__title1 c-title">バーガー</h3>
   <ul class="p-menu">
     <li class="c-menu-list">ハンバーガー</li>
     <li class="c-menu-list">チーズバーガー</li>
@@ -29,5 +30,5 @@
     <li class="c-menu-list">アップル</li>
     <li class="c-menu-list">紅茶（Ice/Hot）</li>
     <li class="c-menu-list">コーヒー（Ice/Hot）</li>
-  </ul>
+  </ul> -->
 </aside>

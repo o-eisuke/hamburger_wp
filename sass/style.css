@@ -1284,6 +1284,12 @@ body.open {
   }
 }
 
+.menu-item-has-children {
+  list-style: none;
+  margin-bottom: 40px;
+  margin-left: 66px;
+}
+
 .p-archive-wrapper {
   padding: 30px 20px 70px 20px;
 }
