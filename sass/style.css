@@ -1284,10 +1284,23 @@ body.open {
   }
 }
 
-.menu-item-has-children {
-  list-style: none;
+.menu-item-has-children > a {
+  font-weight: bold;
+  color: #707070;
+  margin-top: 212px;
   margin-bottom: 40px;
-  margin-left: 66px;
+  margin-left: 46px;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* WP時のメニュー全体の装飾 */
+.menu {
+  list-style: none;
+}
+
+.sub-menu {
+  list-style: none;
 }
 
 .p-archive-wrapper {

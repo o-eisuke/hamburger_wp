@@ -1,0 +1,23 @@
+// バーガー・サイド・ドリンク
+
+@use "../../Foundation/variable" as v;
+
+.menu-item-has-children > a {
+  font-weight: bold;
+  color: v.$mainColor;
+  margin-top: 212px;
+  margin-bottom: 40px;    //←ここが効かない！
+  margin-left: 46px;
+  list-style: none;
+  text-decoration: none;
+  // margin-bottom: 40px;
+  // margin-left: 66px;
+}
+
+.menu {
+  list-style: none;
+}
+
+.sub-menu {
+  list-style: none;
+}
