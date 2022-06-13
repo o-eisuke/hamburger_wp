@@ -1,17 +1,17 @@
 // バーガー・サイド・ドリンク
 
+@use "../../Foundation/mixin" as m;
 @use "../../Foundation/variable" as v;
 
 .menu-item-has-children > a {
+  font-size: 24px;
   font-weight: bold;
   color: v.$mainColor;
-  margin-top: 212px;
-  margin-bottom: 40px;    //←ここが効かない！
+  display: block;
+  margin-bottom: 40px;
   margin-left: 46px;
   list-style: none;
   text-decoration: none;
-  // margin-bottom: 40px;
-  // margin-left: 66px;
 }
 
 .menu {
@@ -20,4 +20,16 @@
 
 .sub-menu {
   list-style: none;
+  margin-left: 66px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: v.$mainColor;
+  display: block;
+  margin-bottom: 23px;
+}
+
+.menu-item:last-child {
+  margin-bottom: 50px;
 }

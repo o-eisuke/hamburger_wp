@@ -41,6 +41,7 @@
   &__menu {
     display: none;
     color: v.$mainColor;
+    font-size: 24px;
     
     @include m.pc {
       display: block;

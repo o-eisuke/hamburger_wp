@@ -357,6 +357,7 @@ ul {
 .p-aside__menu {
   display: none;
   color: #707070;
+  font-size: 24px;
 }
 @media screen and (min-width: 1025px) {
   .p-aside__menu {
@@ -724,6 +725,41 @@ body.open {
   color: #ffffff;
   font-size: 14px;
   margin-top: 34px;
+}
+
+#menu-footermenu {
+  display: flex;
+  margin-bottom: -70px;
+}
+
+.menu-item-object-page {
+  font-size: 20px;
+}
+
+#menu-item-86 {
+  position: relative;
+  display: inline-block;
+}
+
+#menu-item-86::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+}
+
+#menu-item-86 a {
+  color: white;
+  margin-right: 15px;
+}
+
+#menu-item-85 a {
+  color: white;
+  margin-left: 15px;
 }
 
 .p-form {
@@ -1285,22 +1321,34 @@ body.open {
 }
 
 .menu-item-has-children > a {
+  font-size: 24px;
   font-weight: bold;
   color: #707070;
-  margin-top: 212px;
+  display: block;
   margin-bottom: 40px;
   margin-left: 46px;
   list-style: none;
   text-decoration: none;
 }
 
-/* WP時のメニュー全体の装飾 */
 .menu {
   list-style: none;
 }
 
 .sub-menu {
   list-style: none;
+  margin-left: 66px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #707070;
+  display: block;
+  margin-bottom: 23px;
+}
+
+.menu-item:last-child {
+  margin-bottom: 50px;
 }
 
 .p-archive-wrapper {

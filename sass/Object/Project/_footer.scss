@@ -42,3 +42,41 @@
     margin-top: 34px;
   }
 }
+
+
+//WordPress化したときのfooter
+
+#menu-footermenu {
+  display: flex;
+  margin-bottom: -70px;
+}
+
+.menu-item-object-page {
+  font-size: 20px;
+}
+
+#menu-item-86 {
+  position:relative;
+  display:inline-block;
+}
+
+#menu-item-86::after {
+  content:"";
+  display:inline-block;
+  width:1px;
+  height:20px;
+  background-color:white;
+  position:absolute;
+  top:5px;
+  right:0px;
+}
+
+#menu-item-86 a {
+  color: white;
+  margin-right: 15px;
+}
+
+#menu-item-85 a {
+  color: white;
+  margin-left: 15px;
+}
