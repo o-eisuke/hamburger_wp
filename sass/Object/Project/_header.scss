@@ -29,6 +29,11 @@
     }
   }
 
+  &__title a {
+    text-decoration: none;
+    color: v.$mainColor;
+  }
+
   &__menu {
     // 位置を調整
     position: absolute;

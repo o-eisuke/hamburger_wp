@@ -866,6 +866,10 @@ body.open {
     font-size: 64px;
   }
 }
+.p-header__title a {
+  text-decoration: none;
+  color: #707070;
+}
 .p-header__menu {
   position: absolute;
   top: 14px;
@@ -1349,6 +1353,108 @@ body.open {
 
 .menu-item:last-child {
   margin-bottom: 50px;
+}
+
+.wp-pagenavi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 30px 30px;
+}
+@media screen and (min-width: 600px) {
+  .wp-pagenavi {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+.pages {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .pages {
+    display: block;
+    margin-right: 4px;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #707070;
+  }
+}
+
+.page {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .page {
+    display: block;
+    text-decoration: none;
+    color: #707070;
+    border: 1px solid #000;
+    padding: 7px 13px 7px 13px;
+  }
+  .page:hover {
+    background-color: #3C2B1C;
+    color: #fff;
+  }
+}
+
+.current {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .current {
+    display: block;
+    border: 1px solid #707070;
+    padding: 7px 13px 7px 13px;
+    background-color: #3C2B1C;
+    color: #fff;
+  }
+}
+
+.previouspostslink {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #707070;
+}
+.previouspostslink::after {
+  content: "前へ";
+}
+@media screen and (min-width: 600px) {
+  .previouspostslink::after {
+    content: none;
+  }
+}
+
+.nextpostslink {
+  margin-left: auto;
+  margin-right: 0;
+  text-decoration: none;
+  color: #707070;
+}
+@media screen and (min-width: 600px) {
+  .nextpostslink {
+    margin: inherit;
+  }
+}
+.nextpostslink::before {
+  content: "次へ";
+}
+@media screen and (min-width: 600px) {
+  .nextpostslink::before {
+    content: none;
+  }
+}
+
+.first {
+  display: none;
+}
+
+.last {
+  display: none;
 }
 
 .p-archive-wrapper {
