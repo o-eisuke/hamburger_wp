@@ -6,7 +6,10 @@
       <?php
         if(has_post_thumbnail()):
           the_post_thumbnail("full");
-        endif;?>
+        else :
+          ?>
+          <img src=“<?php echo esc_url( get_template_directory_uri() . "/../images/cheese-burger.png" ); ?>” alt=“” />
+        <?php endif;?>
         <div class="p-card__content">
           <h3 class="p-card__content--titile"><?php the_title();?></h3>
           <div class="p-card__content--field">
@@ -20,3 +23,10 @@
     <?php endwhile;
   endif;
 ?>
+
+
+
+
+
+
+

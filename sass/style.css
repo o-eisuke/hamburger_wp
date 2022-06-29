@@ -291,7 +291,7 @@ ul {
 }
 
 .p-archive-visual {
-  background: url(../../../images/archive-visual.png);
+  background: url(../images/archive-visual.png);
   background-color: rgba(0, 0, 0, 0.8);
   background-size: cover;
   height: 283px;
@@ -1455,6 +1455,13 @@ body.open {
 
 .last {
   display: none;
+}
+
+.p-main__topImages {
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 .p-archive-wrapper {
