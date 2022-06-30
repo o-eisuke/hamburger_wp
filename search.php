@@ -19,7 +19,7 @@
    </div>
 
    <?php wp_pagenavi(); ?>
-   <?php wp_link_pages( $args ); ?>
+   <?php wp_link_pages(); ?>
 
  </article>
 
