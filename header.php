@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html <?php language_attributes(); ?>>
 
 <head>
   <meta charset="UTF-8">
@@ -13,7 +13,8 @@
   <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
   <div class="l-container">
 
     <div class="zdo_drawer_bg"></div>

@@ -10,7 +10,8 @@
                 $img = array(get_template_directory_uri() . 'images/pc_tomato-cheese.png');
             endif;
             ?>
-            <div class="p-single-visual">
+            <!-- <div class="p-single-visual"> -->
+            <div <?php post_class('p-single-visual'); ?>>
               <h1 class="p-main p-main__topImages" style="background-image: url('<?php echo $img[0]; ?>');">
                 <a class="p-main__topTitle"><?php the_title(); ?></a>
               </h1>

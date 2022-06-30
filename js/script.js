@@ -1,3 +1,6 @@
+jQuery(function($){
+
+
 $(function () {
 	
 	$('.p-header__menu').click(function () {
@@ -14,3 +17,5 @@ $(function () {
     $('body').removeClass('open');
 	});
 })
+
+});
