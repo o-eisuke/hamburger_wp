@@ -1,6 +1,25 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
 .p-main__topImages {
   height: 500px;
   width: 100%;
   background-position: center;
   background-size: cover;
+}
+
+.p-main__topTitle {
+  color: white;
+  font-family: "M+1";
+  font-weight: bold;
+  margin-left: 26px;
+  line-height: 500px;
+  display: block;
+  
+
+  @include m.tb {
+    font-size: 60px;
+    margin-left: 86px;
+  }
+
 }

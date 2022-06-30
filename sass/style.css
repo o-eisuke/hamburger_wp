@@ -1464,6 +1464,21 @@ body.open {
   background-size: cover;
 }
 
+.p-main__topTitle {
+  color: white;
+  font-family: "M+1";
+  font-weight: bold;
+  margin-left: 26px;
+  line-height: 500px;
+  display: block;
+}
+@media screen and (min-width: 600px) {
+  .p-main__topTitle {
+    font-size: 60px;
+    margin-left: 86px;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .p-card {
     display: flex;
