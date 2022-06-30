@@ -1,0 +1,46 @@
+@use "../../Foundation/mixin" as m;
+@use "../../Foundation/variable" as v;
+
+.p-card {
+  @include m.tb {
+    display: flex;
+  }
+}
+
+.p-subheading {
+  margin-bottom: 20px;
+}
+
+.wp-post-image {
+  width: 100%;
+  height: 230px;
+
+  @include m.tb {
+    height: auto;
+    width: 50%;
+  }
+}
+
+.p-card__content--field {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "M+ 1m";
+  color: v.$whiteFont;
+  margin-bottom: 10px;
+  min-height: 150px;
+}
+
+.p-card__content--button {
+  align-items: flex-end;
+  text-align: center;
+  display: block;
+  line-height: 42.47px;
+  @include m.pc {
+    line-height: 76px;
+  }
+}
+
+.p-card__content--button a {
+  text-decoration: none;
+  color: #707070;
+}
